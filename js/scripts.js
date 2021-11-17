@@ -32,7 +32,7 @@ function initialize() {
     var earth = new WE.map('earth_div');
     WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(earth);
 
-    fetch("composer.json")
+    fetch("arch.json")
     .then(response => response.json())
     .then(data => {
         for(let i = 0; i < Object.keys(data).length ; i++){
